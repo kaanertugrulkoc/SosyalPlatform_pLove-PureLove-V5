@@ -8,7 +8,7 @@ Uygulamanın şık ve modern tasarımından bazı örnekler:
 
 | Ana Sayfa | Keşfet | Profil |
 |:---:|:---:|:---:|
-| ![Home Screen](./assets/screenshots/home.png) | ![Explore Screen](./assets/screenshots/explore.png) |  |
+|  | ![Explore Screen](./assets/screenshots/explore.png) |  |
 
 ## ✨ Özellikler
 
