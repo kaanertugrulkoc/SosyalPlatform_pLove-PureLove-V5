@@ -88,8 +88,8 @@ const PostItem = ({ item }) => (
         />
 
         {/* Post Actions */}
-        <View className="flex-row items-center justify-between px-3 pt-3">
-            <View className="flex-row items-center gap-4">
+        <View className="flex-row items-center justify-between px-3 pt-3" style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+            <View className="flex-row items-center gap-4" style={{ flexDirection: 'row', gap: 16, alignItems: 'center' }}>
                 <TouchableOpacity>
                     <Ionicons name="heart-outline" size={28} color="black" />
                 </TouchableOpacity>
