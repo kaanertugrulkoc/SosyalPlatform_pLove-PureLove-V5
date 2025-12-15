@@ -36,7 +36,7 @@ const ProfileScreen = () => {
                 {/* Profile Stats */}
                 <View className="flex-row items-center px-4 py-4" style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <Image
-                        source={{ uri: 'https://i.pravatar.cc/150?u=me' }}
+                        source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg' }}
                         className="w-20 h-20 rounded-full border border-gray-200"
                     />
                     <View className="flex-1 flex-row justify-around ml-4" style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
