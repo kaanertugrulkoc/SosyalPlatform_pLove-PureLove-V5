@@ -42,7 +42,9 @@ const ProfileScreen = () => {
             <View className="flex-row justify-between items-center px-4 py-3 border-b border-gray-50 bg-white" style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                 <View className="flex-row items-center flex-1 pr-4" style={{ flexDirection: 'row', alignItems: 'center', flex: 1 }}>
                     <Ionicons name="lock-closed-outline" size={16} color="black" />
-                    <Text className="text-xl font-bold ml-1 text-black" numberOfLines={1} style={{ fontWeight: '700' }}>oguzkaankoc_uzun_isim_testi</Text>
+                    <Text className="text-xl font-bold ml-1 text-black" numberOfLines={1} style={{ fontWeight: '700' }}>
+                        {user?.name || 'Kullanıcı'}
+                    </Text>
                     <Ionicons name="chevron-down" size={14} color="black" className="ml-1" />
                 </View>
                 <View className="flex-row gap-5" style={{ flexDirection: 'row', gap: 20 }}>
