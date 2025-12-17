@@ -49,8 +49,8 @@ const ProfileScreen = () => {
                     <TouchableOpacity>
                         <Ionicons name="add-circle-outline" size={28} color="black" />
                     </TouchableOpacity>
-                    <TouchableOpacity>
-                        <Ionicons name="menu-outline" size={28} color="black" />
+                    <TouchableOpacity onPress={handleLogout}>
+                        <Ionicons name="log-out-outline" size={28} color="black" />
                     </TouchableOpacity>
                 </View>
             </View>
