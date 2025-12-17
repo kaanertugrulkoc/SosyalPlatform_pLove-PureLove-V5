@@ -1,17 +1,40 @@
-import { View, Text, Image, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ScrollView, Dimensions, Alert } from 'react-native';
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
+import { useAuth } from '../context/AuthContext';
 
 const { width } = Dimensions.get('window');
 const IMAGE_SIZE = width / 3 - 2; // 3 columns with gap
 
 const ProfileScreen = () => {
+    const { logout, user } = useAuth();
+
     // Mock User Photos
     const PHOTOS = Array.from({ length: 15 }).map((_, i) => ({
         id: i,
         uri: `https://picsum.photos/400/400?random=${i + 20}`,
     }));
+
+    const handleLogout = () => {
+        Alert.alert(
+            'Çıkış Yap',
+            'Hesabınızdan çıkış yapmak istediğinize emin misiniz?',
+            [
+                { text: 'İptal', style: 'cancel' },
+                {
+                    text: 'Çıkış Yap',
+                    style: 'destructive',
+                    onPress: async () => {
+                        const result = await logout();
+                        if (result.success) {
+                            // AuthContext otomatik olarak login ekranına yönlendirecek
+                        }
+                    },
+                },
+            ]
+        );
+    };
 
     return (
         <SafeAreaView className="flex-1 bg-white" edges={['top']}>
