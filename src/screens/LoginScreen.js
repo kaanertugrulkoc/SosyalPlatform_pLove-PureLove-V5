@@ -11,6 +11,7 @@ import {
   Animated,
   Dimensions,
   Alert,
+  ActivityIndicator,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
@@ -175,9 +176,10 @@ export default function LoginScreen({ navigation }) {
 
               {/* Giriş/Kayıt Butonu */}
               <TouchableOpacity
-                style={styles.authButton}
+                style={[styles.authButton, isLoading && styles.authButtonDisabled]}
                 onPress={handleAuth}
                 activeOpacity={0.8}
+                disabled={isLoading}
               >
                 <LinearGradient
                   colors={['#fff', '#f0f0f0']}
@@ -185,9 +187,13 @@ export default function LoginScreen({ navigation }) {
                   end={{ x: 1, y: 0 }}
                   style={styles.authButtonGradient}
                 >
-                  <Text style={styles.authButtonText}>
-                    {isLogin ? 'Giriş Yap' : 'Kayıt Ol'}
-                  </Text>
+                  {isLoading ? (
+                    <ActivityIndicator color="#667eea" size="small" />
+                  ) : (
+                    <Text style={styles.authButtonText}>
+                      {isLogin ? 'Giriş Yap' : 'Kayıt Ol'}
+                    </Text>
+                  )}
                 </LinearGradient>
               </TouchableOpacity>
 
@@ -324,6 +330,9 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 8,
     elevation: 8,
+  },
+  authButtonDisabled: {
+    opacity: 0.6,
   },
   authButtonGradient: {
     paddingVertical: 16,
