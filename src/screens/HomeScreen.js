@@ -8,11 +8,11 @@ const { width } = Dimensions.get('window');
 // Mock Data
 const STORIES = [
     { id: 0, user: 'hikaye_senin', avatar: 'https://i.pravatar.cc/150?u=0', isMe: true },
-    { id: 1, user: 'ahmet_yilmaz', avatar: 'https://i.pravatar.cc/150?u=1' },
-    { id: 2, user: 'ayse_demir', avatar: 'https://i.pravatar.cc/150?u=2' },
-    { id: 3, user: 'mehmet_k', avatar: 'https://i.pravatar.cc/150?u=3' },
-    { id: 4, user: 'zeynep_s', avatar: 'https://i.pravatar.cc/150?u=4' },
-    { id: 5, user: 'can_b', avatar: 'https://i.pravatar.cc/150?u=5' },
+    { id: 1, user: 'alp', avatar: 'https://i.pravatar.cc/150?u=1' },
+    { id: 2, user: 'selahattin', avatar: 'https://i.pravatar.cc/150?u=2' },
+    { id: 3, user: 'ertugrul', avatar: 'https://i.pravatar.cc/150?u=3' },
+    { id: 4, user: 'oguz', avatar: 'https://i.pravatar.cc/150?u=4' },
+    { id: 5, user: 'kaan', avatar: 'https://i.pravatar.cc/150?u=5' },
 ];
 
 const POSTS = [
