@@ -8,7 +8,7 @@ Uygulamanın şık ve modern tasarımından bazı örnekler:
 
 | Ana Sayfa | Keşfet | Profil |
 |:---:|:---:|:---:|
-|  <img width="1280" height="2856" alt="image" src="https://github.com/user-attachments/assets/10967301-79ed-4d34-899f-052f10ad0153" />
+|
 | ![Explore Screen](./assets/screenshots/explore.png) |  |
 
 ## ✨ Özellikler
