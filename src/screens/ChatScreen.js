@@ -4,13 +4,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 
 const CHATS = [
-    { id: 1, name: 'Ahmet Yılmaz', message: 'Yarın buluşuyor muyuz?', time: '14:30', avatar: 'https://i.pravatar.cc/150?u=1' },
-    { id: 2, name: 'Zeynep Kaya', message: 'Fotoğrafları attım 📸', time: '12:15', avatar: 'https://i.pravatar.cc/150?u=4', unread: 2 },
-    { id: 3, name: 'Mehmet Demir', message: 'Tebrikler kardeşim!', time: 'Dün', avatar: 'https://i.pravatar.cc/150?u=3' },
-    { id: 4, name: 'Elif Şahin', message: 'Görüşürüz 👋', time: 'Dün', avatar: 'https://i.pravatar.cc/150?u=2' },
+    { id: 1, name: 'selahattin', message: 'Yarın buluşuyor muyuz?', time: '14:30', avatar: 'https://i.pravatar.cc/150?u=1' },
+    { id: 2, name: 'alp', message: 'Fotoğrafları attım 📸', time: '12:15', avatar: 'https://i.pravatar.cc/150?u=4', unread: 2 },
+    { id: 3, name: 'kaan', message: 'Tebrikler kardeşim!', time: 'Dün', avatar: 'https://i.pravatar.cc/150?u=3' },
+    { id: 4, name: 'oguz', message: 'Görüşürüz 👋', time: 'Dün', avatar: 'https://i.pravatar.cc/150?u=2' },
     { id: 5, name: 'Teknoloji Grubu', message: 'Can: Yeni sürüm çıktı mı?', time: 'Salı', avatar: 'https://i.pravatar.cc/150?u=11' },
-    { id: 6, name: 'Ayşe Yıldız', message: 'Teşekkürler', time: 'Pzt', avatar: 'https://i.pravatar.cc/150?u=5' },
-    { id: 7, name: 'Caner Erkin', message: 'Maçı izledin mi?', time: 'Pzt', avatar: 'https://i.pravatar.cc/150?u=6' },
+    { id: 6, name: '...', message: 'Teşekkürler', time: 'Pzt', avatar: 'https://i.pravatar.cc/150?u=5' },
+    { id: 7, name: '...', message: 'Maçı izledin mi?', time: 'Pzt', avatar: 'https://i.pravatar.cc/150?u=6' },
 ];
 
 const ChatItem = ({ item }) => (
